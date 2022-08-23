@@ -1,0 +1,28 @@
+class Solution
+{
+    public int numberOfSteps(int num)
+    {
+        int a=Steps(num,0);
+        return a;
+    }
+    
+    static int Steps(int num,int count)
+    {
+        if(num<0)
+            return -1;
+            
+        if(num==0)
+            return count;
+        
+        if(num%2==0)
+        {
+            count++;
+         return Steps(num/2,count);
+        }
+            else
+            {
+                count++;
+            return Steps(num-1,count);
+            }
+        }
+}s
