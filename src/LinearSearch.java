@@ -11,6 +11,7 @@ public class LinearSearch
         System.out.println(find2(arr,4,0));
     }
 
+    //this method returns a list
     static ArrayList<Integer> find(int []arr,int target,int index,ArrayList<Integer> list)
     {
         if (index==arr.length)
