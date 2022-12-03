@@ -12,7 +12,7 @@ public class subsequence
     {
 
         if (up.isEmpty()) {
-            System.out.println(P);
+            System.out.print(P+" ");
             return;
         }
         char ch=up.charAt(0);
